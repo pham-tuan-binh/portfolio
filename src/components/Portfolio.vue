@@ -129,7 +129,7 @@ const illustration = [
 const photography = [
     {
         heading: "Broken on 365days",
-        caption: "August 30, 2022 · Binh Pham",
+        caption: "August 30, 2022 · Binh Pham, Nam Nguyen",
         src: broken,
         href: "https://www.instagram.com/p/Ch4SSuiBpuX/",
     },
