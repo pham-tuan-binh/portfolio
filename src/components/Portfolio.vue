@@ -101,13 +101,13 @@ const creative = [
         heading: "Lego",
         caption: "January 9, 2023 · Binh Pham",
         src: lego,
-        href: "https://binhph.am/posts/neocoat-intro/",
+        href: "https://binhph.am/posts/legos/",
     },
     {
         heading: "square()",
         caption: "January 14, 2023 · Binh Pham",
         src: square,
-        href: "https://binhph.am/posts/memory-catalog/",
+        href: "https://binhph.am/posts/square/",
     },
 ];
 
