@@ -58,29 +58,40 @@
   
 <script setup>
 import ProjectContainer from "./ProjectsContainer.vue"
+
+import neocoat from '../assets/neocoat.png';
+import memoryCatalog from "../assets/memory-catalog.jpeg";
+import ethrift from "../assets/ethrift.jpeg";
+import days from "../assets/365days.jpeg";
+import lego from "../assets/lego.png";
+import trada from "../assets/trada.png";
+import symbols from "../assets/symbols.png";
+import broken from "../assets/broken.jpeg";
+import square from "../assets/square.jpg";
+
 const fullstack = [
     {
         heading: "Neocoat",
         caption: "March 1, 2022 · Binh Pham",
-        src: "/src/assets/neocoat.png",
+        src: neocoat,
         href: "https://binhph.am/posts/neocoat-intro/",
     },
     {
         heading: "Memory Catalog",
         caption: "May 27, 2022 · Binh Pham",
-        src: "/src/assets/memory-catalog.jpeg",
+        src: memoryCatalog,
         href: "https://binhph.am/posts/memory-catalog/",
     },
     {
         heading: "EThrift",
         caption: "August 15, 2022 · Binh Pham, Hiep Nguyen",
-        src: "/src/assets/ethrift.jpeg",
+        src: ethrift,
         href: "https://github.com/hiepnnguyentcu/EThrift",
     },
     {
         heading: "365Days",
         caption: "September 25, 2022 · Binh Pham",
-        src: "/src/assets/365days.jpeg",
+        src: days,
         href: "https://binhph.am/posts/365days/",
     },
 ];
@@ -89,13 +100,13 @@ const creative = [
     {
         heading: "Lego",
         caption: "January 9, 2023 · Binh Pham",
-        src: "/src/assets/lego.png",
+        src: lego,
         href: "https://binhph.am/posts/neocoat-intro/",
     },
     {
         heading: "square()",
         caption: "January 14, 2023 · Binh Pham",
-        src: "/src/assets/square.jpg",
+        src: square,
         href: "https://binhph.am/posts/memory-catalog/",
     },
 ];
@@ -104,13 +115,13 @@ const illustration = [
     {
         heading: "Trà đá kí hoạ",
         caption: "March 6, 2020 · Binh Pham",
-        src: "/src/assets/trada.png",
+        src: trada,
         href: "https://www.behance.net/gallery/93353075/Tra-da-ki-ho",
     },
     {
         heading: "Symbols of Việt Nam",
         caption: "July 2, 2020 · Binh Pham",
-        src: "/src/assets/symbols.png",
+        src: symbols,
         href: "https://www.behance.net/gallery/99939753/Symbols-Of-Vit-Nam",
     },
 ];
@@ -119,7 +130,7 @@ const photography = [
     {
         heading: "Broken on 365days",
         caption: "August 30, 2022 · Binh Pham",
-        src: "/src/assets/broken.jpeg",
+        src: broken,
         href: "https://www.instagram.com/p/Ch4SSuiBpuX/",
     },
 ];
