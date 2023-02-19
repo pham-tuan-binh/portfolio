@@ -49,6 +49,14 @@
             </div>
         </div>
 
+        <div class="flex flex-col items-start p-4 gap-4">
+                <span class="text-3xl font-bold ml-4">Certificates and Licenses</span>
+                <div class="flex flex-col items-start px-4 cursor-pointer" @click="aws">
+                    <span class="font-bold">Amazon AWS Certified Developer - Associate</span>
+                    <span class="text-xs">Issued in February 2023</span>
+                </div>
+            </div>
+
         <ProjectContainer :content="fullstack" heading="Fullstack Projects" caption="These are projects in which I utilize my skills as a Fullstack Developer, building applications and products from the ground up." />
         <ProjectContainer :content="creative" heading="Creative Coding Projects" caption="These are projects in which I utilize my skills in Creative Coding, merging the technical and creative worlds."/>
         <ProjectContainer :content="illustration" heading="Illustration Projects" caption="These are my illustration albums."/>
@@ -68,6 +76,7 @@ import trada from "../assets/trada.png";
 import symbols from "../assets/symbols.png";
 import broken from "../assets/broken.jpeg";
 import square from "../assets/square.jpg";
+import googly from "../assets/googly.jpg";
 
 const fullstack = [
     {
@@ -109,6 +118,12 @@ const creative = [
         src: square,
         href: "https://binhph.am/posts/square/",
     },
+    {
+        heading: "Googly",
+        caption: "February 15, 2023 · Binh Pham",
+        src: googly,
+        href: "https://binhph.am/posts/googly/",
+    },
 ];
 
 const illustration = [
@@ -134,5 +149,9 @@ const photography = [
         href: "https://www.instagram.com/p/Ch4SSuiBpuX/",
     },
 ];
+
+function aws() {
+    window.open("https://www.credly.com/badges/a580540a-ddcd-401b-a6dd-1f0819824483/linked_in_profile");
+}
 
  </script>
