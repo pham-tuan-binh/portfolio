@@ -151,7 +151,7 @@ const photography = [
 ];
 
 function aws() {
-    window.open("https://www.credly.com/badges/a580540a-ddcd-401b-a6dd-1f0819824483/linked_in_profile");
+    window.open("https://www.credly.com/badges/a580540a-ddcd-401b-a6dd-1f0819824483/public_url");
 }
 
  </script>
