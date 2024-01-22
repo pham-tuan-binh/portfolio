@@ -5,57 +5,6 @@
             <span class="text-3xl font-bold ml-4">Hello, I'm Binh Pham.</span>
             <span class="ml-4 max-w-xl text-left">I’m multi-disciplined engineer who has his hand on a wide range of fields including FullStack IoT, Illustrations, Graphic Design, Photography and Creative Coding.</span>
         </div>
-        <div class="flex flex-row flex-wrap gap-4">
-            <div class="flex flex-col items-start p-4 gap-4">
-                <span class="text-3xl font-bold ml-4">Education</span>
-                <div class="flex flex-col items-start px-4">
-                    <span class="font-bold">Budapest University of Technology and Economics</span>
-                    <span class="text-xs">BSc in Electrical Engineering 2022-2026</span>
-                </div>
-                <div class="flex flex-col items-start px-4">
-                    <span class="font-bold">Tran Phu Highschool For The Gifted, Viet Nam</span>
-                    <span class="text-xs">Major in Physics</span>
-                </div>
-            </div>
-
-            <div class="flex flex-col items-start p-4 gap-4">
-                <span class="text-3xl font-bold ml-4">Skills</span>
-                <div class="grid grid-cols-2 grid-rows-3 gap-4">
-                    <div class="flex flex-col items-start px-4">
-                        <span class="font-bold">Programming Languages</span>
-                        <span class="text-xs">C/C++, JavaScript, Python</span>
-                    </div>
-                    <div class="flex flex-col items-start px-4">
-                        <span class="font-bold">Database</span>
-                        <span class="text-xs">SQL, MongoDb, Firestore(Firebase)</span>
-                    </div>
-                    <div class="flex flex-col items-start px-4">
-                        <span class="font-bold">Backend</span>
-                        <span class="text-xs">NodeJS, ExpressJS, Flask, Django</span>
-                    </div>
-                    <div class="flex flex-col items-start px-4">
-                        <span class="font-bold">Project Management</span>
-                        <span class="text-xs">Jira</span>
-                    </div>
-                    <div class="flex flex-col items-start px-4">
-                        <span class="font-bold">Frontend</span>
-                        <span class="text-xs">ReactJS/Native, VueJS, Svelte</span>
-                    </div>
-                    <div class="flex flex-col items-start px-4">
-                        <span class="font-bold">Other</span>
-                        <span class="text-xs">Photoshop, Illustrator, TouchDesigner</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="flex flex-col items-start p-4 gap-4">
-                <span class="text-3xl font-bold ml-4">Certificates and Licenses</span>
-                <div class="flex flex-col items-start px-4 cursor-pointer" @click="aws">
-                    <span class="font-bold">Amazon AWS Certified Developer - Associate</span>
-                    <span class="text-xs">Issued in February 2023</span>
-                </div>
-            </div>
 
         <ProjectContainer :content="fullstack" heading="Fullstack Projects" caption="These are projects in which I utilize my skills as a Fullstack Developer, building applications and products from the ground up." />
         <ProjectContainer :content="creative" heading="Creative Coding Projects" caption="These are projects in which I utilize my skills in Creative Coding, merging the technical and creative worlds."/>
