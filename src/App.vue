@@ -22,6 +22,13 @@
 <script setup>
 import Portfolio from "./components/Portfolio.vue";
 import Avatar from "./components/Avatar.vue";
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+import { faGithub, faFacebook, faThreads, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'
+
+/* add icons to the library */
+library.add(faGithub ,faFacebook, faThreads, faLinkedin, faInstagram);
 
 document.addEventListener("mousemove", (event) => {
       document.mousePosX = event.clientX;
@@ -36,6 +43,6 @@ const handleClick = () => {
 
 <style scoped>
 .on-top {
-  transform: translate3d(0, 0, 200px);
+  transform: translate3d(0, 0, 4000px);
 }
 </style>
