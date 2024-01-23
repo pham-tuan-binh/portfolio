@@ -1,7 +1,7 @@
 <template>
-  <div class="w-full -mb-8  sm:w-72 sm:h-72 flex sm:flex-row flex-col items-center ">  
+  <div class="w-full -mb-8  sm:w-72 sm:h-72 flex sm:flex-row flex-col items-center z-0 ">  
     <img class="block sm:hidden w-3/4" src="/src/assets/bubble/mobile_bubble.png"/>
-    <canvas ref="avatar" class="w-full  -mb-8" width="1024" height="1024"></canvas>
+    <canvas ref="avatar" class="w-full -mb-8" width="1024" height="1024"></canvas>
     
     <img class="hidden sm:block" src="/src/assets/bubble/desktop_bubble.png"/>
   </div>

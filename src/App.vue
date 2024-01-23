@@ -11,7 +11,7 @@
       </div>
     </header> -->
     <Avatar class="p-4"/>
-    <Portfolio/>
+    <Portfolio class="z-10 on-top"/>
     <footer class="footer my-8 mx-4 flex flex-col items-center justify-center ">
       <img src="./assets/vaselogo.png" class="w-24">
       <span class="">© 2024 <a href="https://binhph.am">Binh's Archive</a></span>
@@ -33,3 +33,9 @@ const handleClick = () => {
 }
 
 </script>
+
+<style scoped>
+.on-top {
+  transform: translate3d(0, 0, 200px);
+}
+</style>
