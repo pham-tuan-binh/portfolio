@@ -39,17 +39,26 @@ class World {
     const avatar = avatarScene[5];
 
     avatar.tick = () => {
-      const mouse = new Vector2(document.mousePosX, document.mousePosY);
-      const center = getCenter(this.canvas);
+      let width = window.innerWidth;
+      console.log(width);
+      ``;
+      if (width > 640) {
+        const mouse = new Vector2(document.mousePosX, document.mousePosY);
+        const center = getCenter(this.canvas);
 
-      let degreeX = MathUtils.degToRad(
-        MathUtils.clamp(((center.y - mouse.y) / center.y) * 45, -45, 45)
-      );
-      let degreeY = MathUtils.degToRad(
-        MathUtils.clamp((-(center.x - mouse.x) / center.x) * 45, -45, 45)
-      );
+        let degreeX = MathUtils.degToRad(
+          MathUtils.clamp(((center.y - mouse.y) / center.y) * 45, -45, 45)
+        );
+        let degreeY = MathUtils.degToRad(
+          MathUtils.clamp((-(center.x - mouse.x) / center.x) * 45, -45, 45)
+        );
 
-      avatar.rotation.set(degreeX, degreeY, 0);
+        avatar.rotation.set(degreeX, degreeY, 0);
+      } else {
+        avatar.rotation.x = 0;
+        avatar.rotation.z = 0;
+        avatar.rotation.y += 0.01;
+      }
     };
 
     scene.add(...avatarScene);
