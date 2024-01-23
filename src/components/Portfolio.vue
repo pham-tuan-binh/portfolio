@@ -1,9 +1,9 @@
 <template>
     <div class="flex flex-col items-start gap-4">
         <div class="flex flex-col items-start p-4 gap-4">
-            <img src="../assets/avatar.jpg" class="w-40 ml-4 rounded-full"/>
-            <span class="text-3xl font-bold ml-4">Hello, I'm Binh Pham.</span>
-            <span class="ml-4 max-w-xl text-left">I’m multi-disciplined engineer who has his hand on a wide range of fields including FullStack IoT, Illustrations, Graphic Design, Photography and Creative Coding.</span>
+            <!-- <img src="../assets/avatar.jpg" class="w-40 ml-4 rounded-full"/>
+            <span class="text-3xl font-bold ml-4">Hello, I'm Binh Pham.</span> -->
+            <span class="ml-4 max-w-xl text-left">Hi, I'm Binh, a multidisciplinary engineer with his hands on multiple stuff, from computer graphics and software engineering to hardware design, even photography and illustrations. Here is the place where you can see all of my work.</span>
         </div>
 
         <ProjectContainer :content="fullstack" heading="Fullstack Projects" caption="These are projects in which I utilize my skills as a Fullstack Developer, building applications and products from the ground up." />

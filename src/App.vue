@@ -10,6 +10,7 @@
         </span>
       </div>
     </header> -->
+    <Avatar class="p-4"/>
     <Portfolio/>
     <footer class="footer my-8 mx-4 flex flex-col items-center justify-center ">
       <img src="./assets/vaselogo.png" class="w-24">
@@ -19,7 +20,8 @@
 </template>
 
 <script setup>
-import Portfolio from "./components/Portfolio.vue"
+import Portfolio from "./components/Portfolio.vue";
+import Avatar from "./components/Avatar.vue";
 
 document.addEventListener("mousemove", (event) => {
       document.mousePosX = event.clientX;

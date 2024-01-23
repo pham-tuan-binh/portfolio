@@ -11,7 +11,9 @@
 </template>
   
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
+import { bound } from '../utils/math';
+import { getCenter } from '../utils/element';
 
 const props = defineProps({
   heading: String,
@@ -20,19 +22,13 @@ const props = defineProps({
   href: String,
 })
 
-const project = ref("project");
+const project = ref();
 
 let isMouseInside = false;
 
-function bound(a, b) {
-
-    return a > b || a < -b ? -b : a;
-}
-
 function updatePerspective() {
     if (isMouseInside) {
-    const position = project.value.getBoundingClientRect();
-    const center = {x: position.x + position.width/2, y: position.y + position.height/2 };
+    const center = getCenter(project.value);
 
 
     let degreesY = bound(-(center.x - document.mousePosX) / center.x * 90, 75);
@@ -41,7 +37,7 @@ function updatePerspective() {
     let yOffset = (center.x - document.mousePosX) / 50;
     let xOffset = (center.y - document.mousePosY) / 50;
 
-    console.log(`Position: ${center.x} ${center.y}`);
+    // console.log(`Position: ${center.x} ${center.y}`);
     // console.log(`Mouse Event: ${event.clientX} ${event.clientY}`);
     
     project.value.style.transform = `perspective( 2000px ) rotateY(${degreesY}deg) rotateX(${degreesX}deg)`;
@@ -73,7 +69,6 @@ function onMouseEnter(event) {
 function handleClick(event) {
     window.open(props.href);
 }
-
 </script>
 
 <style>
