@@ -1,8 +1,8 @@
 <template>
   <div class="flex flex-col items-start p-4 gap-4">
     <div class="flex flex-col items-start gap-4">
-        <span class="text-3xl font-bold ml-4">{{ heading }}</span>
-        <span class="ml-4 max-w-xl">{{ caption }}</span>
+        <span class="ml-4 text-h1">{{ heading }}</span>
+        <span class="ml-4 max-w-xl text-body">{{ caption }}</span>
     </div>
     <div class="flex gap-4 flex-wrap">
        <Project v-for="item in content" :heading="item.heading" :caption="item.caption" :src="item.src" :href="item.href" :key="item.heading"/>

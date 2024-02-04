@@ -15,3 +15,11 @@ html {background-color: #F5F5F5;}
 span {
   text-align: left;
 }
+
+.text-body {
+  @apply font-medium text-zinc-600 text-xl 
+}
+
+.text-h1 {
+  @apply font-bold text-zinc-900 text-3xl
+}

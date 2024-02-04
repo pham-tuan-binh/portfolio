@@ -10,18 +10,21 @@
         </span>
       </div>
     </header> -->
-    <Avatar class="p-4"/>
+    <Avatar class="-ml-4"/>
+
+    <Introduction class="mt-4 mb-12"/>
+
     <Portfolio class="z-10 on-top"/>
-    <footer class="footer my-8 mx-4 flex flex-col items-center justify-center ">
-      <img src="./assets/vaselogo.png" class="w-24">
-      <span class="">© 2024 <a href="https://binhph.am">Binh's Archive</a></span>
-    </footer>
+
+    <Footer class="footer my-4 mx-4 flex flex-col items-center justify-center"/>
   </div>
 </template>
 
 <script setup>
 import Portfolio from "./components/Portfolio.vue";
 import Avatar from "./components/Avatar.vue";
+import Introduction from "./components/Introduction.vue";
+import Footer from "./components/Footer.vue";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
@@ -41,8 +44,12 @@ const handleClick = () => {
 
 </script>
 
-<style scoped>
+<style>
 .on-top {
   transform: translate3d(0, 0, 4000px);
+}
+
+.text-body {
+
 }
 </style>
