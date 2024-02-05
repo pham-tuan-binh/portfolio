@@ -10,7 +10,7 @@
         </span>
       </div>
     </header> -->
-    <Avatar class="-ml-4"/>
+    <Avatar class="md:-ml-4"/>
 
     <Introduction class="mt-4 mb-12"/>
 
